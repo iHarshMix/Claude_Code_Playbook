@@ -2,10 +2,11 @@
 
 > Formatting contract for all theme notes.
 > Claude reads this every session before creating or editing any note.
+> This guide evolves — update it when a better pattern is found, not before.
 
 ---
 
-## Note Skeleton (fixed — every note follows this exactly)
+## Note Skeleton (stable — every note follows this structure)
 
 ```
 # [Note Title]
@@ -33,26 +34,50 @@
 | Level | Use For |
 |-------|---------|
 | `#` H1 | Note title only. One per note. |
-| `##` H2 | The 6 fixed sections |
+| `##` H2 | The 6 standard sections |
 | `###` H3 | Sub-sections within a section only |
 | `####` H4 | Never. Rethink structure instead. |
 
 ---
 
-## Callout Types (three only)
+## Callout Types (four — purpose-driven)
+
+Each callout has a distinct job. Don't use one in place of another.
+
+```markdown
+> [!note] From the Video
+> Exact framing from the source worth preserving as-is.
+> Use sparingly — only when the original phrasing genuinely matters.
+```
 
 ```markdown
 > [!tip] Best Practice
-> Claude-added insight. Not from the video.
-
-> [!warning] Common Mistake
-> What typically goes wrong.
-
-> [!note] From the Video
-> Use sparingly — only when exact source framing matters.
+> An actionable recommendation — something you should do.
+> Always a Claude addition, never from the video.
 ```
 
-`[!tip]` always = Claude addition. Clear separation of source vs added knowledge.
+```markdown
+> [!info] Added Context
+> Background, analogy, or explanation that helps understanding.
+> Claude-added — not in the video, but useful to know.
+```
+
+```markdown
+> [!warning] Common Mistake
+> What typically goes wrong and why.
+> Claude-added — pattern observed beyond the video.
+```
+
+### Source vs Claude — at a glance
+
+| Callout | From Video | From Claude | Type of content |
+|---------|-----------|-------------|-----------------|
+| `[!note]` | ✅ | — | Exact source framing |
+| `[!tip]` | — | ✅ | Actionable best practice |
+| `[!info]` | — | ✅ | Context, analogy, background |
+| `[!warning]` | — | ✅ | Mistake or failure pattern |
+
+**Rule:** If you're reading a `[!note]`, it came from the video. Everything else came from Claude.
 
 ---
 
@@ -107,6 +132,14 @@ Use inline code for: command names, filenames, flags — e.g. `/compact`, `CLAUD
 ✅ Readable without the video.
 ✅ No section longer than ~10 bullets or ~8 lines of prose.
 ✅ Doesn't try to be a transcript.
+
+---
+
+## Changelog
+
+- 2026-05-18 — Initial version. Skeleton and callout rules established.
+- 2026-05-18 — "fixed" replaced with "stable/standard" to reflect that this guide evolves. Changelog added.
+- 2026-05-18 — Added `[!info] Added Context` as fourth callout type. Added source vs Claude reference table for callouts.
 
 ---
 
