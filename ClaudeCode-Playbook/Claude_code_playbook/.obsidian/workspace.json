@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "d9042c082e8f35a8",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa359e627836f15d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1c451f32d50bca92",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Welcome.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Welcome"
+            }
+          }
+        ]
+      },
+      {
+        "id": "5ec682dcd9909cce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4343c76ea860ee81",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "133f7df62906a274",
+    "type": "split",
+    "children": [
+      {
+        "id": "74eb125852cb056e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bbeb1ba782ba9b6d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "9a73598e5d4e3b9c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1a63464540af335f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "61bc6a1fea761ddd",
+    "type": "split",
+    "children": [
+      {
+        "id": "378a479054e0b4e8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b287149fbc5f3300",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "d7199371720950db",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "582f0f5346242725",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "d499e1ea285590f2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "9e14ef934c3428a1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "1c451f32d50bca92",
+  "lastOpenFiles": [
+    "MOC - Claude Code Playbook.md",
+    "15 - Plugins & Extensions.md",
+    "14 - Hooks in Claude Code.md",
+    "13 - MCP (Model Context Protocol).md",
+    "12 - Custom Subagents.md",
+    "11 - Subagents (Built-in).md",
+    "10 - Claude Code Skills.md",
+    "09 - Custom Slash Commands.md",
+    "08 - Plan Mode & Ultraplan.md",
+    "07 - Spec-Driven Development.md",
+    "06 - CLAUDE.md - Instructing the Agent.md",
+    "05 - Context Window Management.md",
+    "04 - Making Code Changes & Adding Context.md",
+    "03 - Slash Commands.md",
+    "02 - Setup & Configuration.md",
+    "01 - Agentic Coding Mindset.md",
+    "_templates/Theme Note Template.md",
+    "_templates",
+    "_meta/PLAYBOOK_CONTEXT.md",
+    "_meta/NOTE_STYLE_GUIDE.md",
+    "_meta",
+    "Welcome.md"
+  ]
+}
