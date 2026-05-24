@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_meta/NOTE_STYLE_GUIDE.md",
+                "file": "MOC - Claude Code Playbook.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NOTE_STYLE_GUIDE"
+              "title": "MOC - Claude Code Playbook"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#note_commandsSkillsMerge",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -183,28 +183,36 @@
       "bases:Create new base": false
     }
   },
-  "active": "1c451f32d50bca92",
+  "active": "bbeb1ba782ba9b6d",
   "lastOpenFiles": [
-    "06 - CLAUDE.md - Instructing the Agent.md",
+    "_meta/PLAYBOOK_CONTEXT.md",
     "_meta/NOTE_STYLE_GUIDE.md",
     "MOC - Claude Code Playbook.md",
-    "_meta/PLAYBOOK_CONTEXT.md",
+    "11 - Subagents (Built-in).md",
+    "09 - Custom Slash Commands.md",
+    "10 - Claude Code Skills.md",
+    "Notes Photos/10 Skill example.png",
+    "Notes Photos/10 Asking Claude to make skills.png",
+    "Notes Photos/10 How skills loads.png",
+    "08 - Plan Mode & Ultraplan.md",
+    "Notes Photos/10 Why Skills.png",
+    "Notes Photos/10- What are Skills.png",
+    "Notes Photos/09 command description part example.png",
+    "Notes Photos",
+    "Pasted image 20260523191307.png",
+    "07 - Spec-Driven Development.md",
+    "06 - CLAUDE.md - Instructing the Agent.md",
+    "05 - Context Window Management.md",
+    "04 - Making Code Changes & Adding Context.md",
+    "03 - Slash Commands.md",
+    "_templates/Theme Note Template.md",
+    "02 - Setup & Configuration.md",
+    "01 - Agentic Coding Mindset.md",
     "Welcome.md",
     "15 - Plugins & Extensions.md",
     "14 - Hooks in Claude Code.md",
     "13 - MCP (Model Context Protocol).md",
     "12 - Custom Subagents.md",
-    "11 - Subagents (Built-in).md",
-    "10 - Claude Code Skills.md",
-    "09 - Custom Slash Commands.md",
-    "08 - Plan Mode & Ultraplan.md",
-    "07 - Spec-Driven Development.md",
-    "05 - Context Window Management.md",
-    "04 - Making Code Changes & Adding Context.md",
-    "03 - Slash Commands.md",
-    "02 - Setup & Configuration.md",
-    "01 - Agentic Coding Mindset.md",
-    "_templates/Theme Note Template.md",
     "_templates",
     "_meta"
   ]
