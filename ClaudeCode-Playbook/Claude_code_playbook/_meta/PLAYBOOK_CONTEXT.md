@@ -30,14 +30,14 @@ Source: CampusX — *Agentic Coding using Claude Code* (15 videos, ongoing playl
 | 8 | Plan Mode + Ultraplan Mode | 37:36 | [[08 - Plan Mode & Ultraplan]] | ✅ |
 | 9 | Custom Slash Commands | 46:27 | [[09 - Custom Slash Commands]] | ✅ |
 | 10 | Claude Code Skills: Full Guide | 49:46 | [[10 - Claude Code Skills]] | ✅ |
-| 11 | SubAgents — Built-in | 48:24 | [[11 - Subagents (Built-in)]] | ⬜ |
-| 12 | Claude Custom Subagents | 47:23 | [[12 - Custom Subagents]] | ⬜ |
-| 13 | Claude + MCP Explained | 54:33 | [[13 - MCP (Model Context Protocol)]] | ⬜ |
-| 14 | Hooks — Full Theory + Practical | 1:04:58 | [[14 - Hooks in Claude Code]] | ⬜ |
-| 15 | Plugins + Claude Code Notes | 35:08 | [[15 - Plugins & Extensions]] | ⬜ |
+| 11 | SubAgents — Built-in | 48:24 | [[11 - Subagents (Built-in)]] | ✅ |
+| 12 | Claude Custom Subagents | 47:23 | [[12 - Custom Subagents]] | ✅ |
+| 13 | Claude + MCP Explained | 54:33 | [[13 - MCP (Model Context Protocol)]] | ✅ |
+| 14 | Hooks — Full Theory + Practical | 1:04:58 | [[14 - Hooks in Claude Code]] | ✅ |
+| 15 | Plugins + Claude Code Notes | 35:08 | [[15 - Plugins & Extensions]] | ✅ |
 
-**Videos covered so far:** 10 / 15
-**Theme notes created so far:** 10 / 15
+**Videos covered so far:** 15 / 15
+**Theme notes created so far:** 15 / 15
 
 ---
 
@@ -55,11 +55,11 @@ Source: CampusX — *Agentic Coding using Claude Code* (15 videos, ongoing playl
 | 08 - Plan Mode & Ultraplan | ✅ | 2026-05-23 |
 | 09 - Custom Slash Commands | ✅ | 2026-05-23 |
 | 10 - Claude Code Skills | ✅ | 2026-05-23 |
-| 11 - Subagents (Built-in) | ⬜ | — |
-| 12 - Custom Subagents | ⬜ | — |
-| 13 - MCP (Model Context Protocol) | ⬜ | — |
-| 14 - Hooks in Claude Code | ⬜ | — |
-| 15 - Plugins & Extensions | ⬜ | — |
+| 11 - Subagents (Built-in) | ✅ | 2026-05-24 |
+| 12 - Custom Subagents | ✅ | 2026-05-24 |
+| 13 - MCP (Model Context Protocol) | ✅ | 2026-05-24 |
+| 14 - Hooks in Claude Code | ✅ | 2026-05-24 |
+| 15 - Plugins & Extensions | ✅ | 2026-05-24 |
 
 ---
 
@@ -82,15 +82,25 @@ Source: CampusX — *Agentic Coding using Claude Code* (15 videos, ongoing playl
 - `$ARGUMENTS` variable for parameterized commands documented in Note 09.
 - Progressive Disclosure (3-level on-demand loading) documented as the core mechanism in Note 10.
 - Personal vs project skill scope table included in Note 10, mirroring the same pattern from Note 06 (CLAUDE.md locations).
+- Context explosion problem and "lost-in-the-middle" effect documented as the two core problems subagents solve in Note 11.
+- Implicit vs explicit subagent triggering documented in Note 11; parallel subagents' same-file conflict warning added as `[!warning]`.
+- Custom subagent file structure (YAML front matter + body) and the two creation methods (UI vs manual) documented in Note 12.
+- Sequential (test-writer → test-runner) and parallel (security + quality review) multi-subagent workflow patterns documented in Note 12 with example slash command wiring.
+- MCP "too many servers degrades context" warning documented in Note 13 — the video's most counterintuitive practical lesson.
+- Coding harness concept introduced in Note 14 as the foundation for understanding hooks — deterministic harness + probabilistic LLM = the problem hooks solve.
+- Agent loop and session lifecycle documented in Note 14 as required conceptual scaffolding; exit code table (0 = proceed, 2 = block) included as the operational core.
+- Plugin folder structure and mandatory `plugin.json` manifest documented in Note 15.
+- Official vs third-party marketplace distinction documented in Note 15 with marketplace.json format.
 
 ---
 
 ## Open Questions / Parked Ideas
 
-- If a future video spans two theme notes, decide at that point: split or extend.
-- `_concepts/` folder: revisit when playlist is complete.
-- To Explore Later: CI/CD pipelines, multi-repo workflows, cost optimization.
-- Skill evaluation and benchmarking: parked in Note 10's To Explore Later — may warrant its own note after playlist completion.
+- `_concepts/` folder: revisit — playlist is now complete, assess whether any cross-cutting concepts warrant isolation.
+- Skill evaluation and benchmarking: parked in Note 10's To Explore Later — may warrant its own note.
+- Building custom MCP servers for internal tools: parked in Note 13's To Explore Later.
+- Private team marketplaces and plugin composition conflicts: parked in Note 15's To Explore Later.
+- CI/CD pipeline integration and multi-repo agentic workflows: remain open for future exploration.
 
 ---
 

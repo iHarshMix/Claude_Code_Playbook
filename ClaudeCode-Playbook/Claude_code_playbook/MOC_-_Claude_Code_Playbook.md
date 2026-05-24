@@ -2,8 +2,8 @@
 
 > A generalized, project-agnostic playbook for using Claude Code effectively.
 > Built from CampusX's *Agentic Coding using Claude Code* playlist.
-> **Last updated:** 2026-05-23
-> **Videos covered:** 10 / 15
+> **Last updated:** 2026-05-24
+> **Videos covered:** 15 / 15 ✅ Complete
 
 ---
 
@@ -35,11 +35,11 @@ It is a **system of best practices** for using Claude Code on *any* real project
 - [x] [[10 - Claude Code Skills]]
 
 ### 🔴 Advanced — Agents & Integrations
-- [ ] [[11 - Subagents (Built-in)]]
-- [ ] [[12 - Custom Subagents]]
-- [ ] [[13 - MCP (Model Context Protocol)]]
-- [ ] [[14 - Hooks in Claude Code]]
-- [ ] [[15 - Plugins & Extensions]]
+- [x] [[11 - Subagents (Built-in)]]
+- [x] [[12 - Custom Subagents]]
+- [x] [[13 - MCP (Model Context Protocol)]]
+- [x] [[14 - Hooks in Claude Code]]
+- [x] [[15 - Plugins & Extensions]]
 
 ---
 
@@ -57,11 +57,11 @@ It is a **system of best practices** for using Claude Code on *any* real project
 | 8 | Plan Mode + Ultraplan Mode | [[08 - Plan Mode & Ultraplan]] | ✅ |
 | 9 | Custom Slash Commands | [[09 - Custom Slash Commands]] | ✅ |
 | 10 | Claude Code Skills: Full Guide | [[10 - Claude Code Skills]] | ✅ |
-| 11 | SubAgents — Context & Token Problems | [[11 - Subagents (Built-in)]] | ⬜ |
-| 12 | Claude Custom Subagents | [[12 - Custom Subagents]] | ⬜ |
-| 13 | Claude + MCP Explained | [[13 - MCP (Model Context Protocol)]] | ⬜ |
-| 14 | Hooks — Full Theory + Practical | [[14 - Hooks in Claude Code]] | ⬜ |
-| 15 | Plugins + Claude Code Notes | [[15 - Plugins & Extensions]] | ⬜ |
+| 11 | SubAgents — Context & Token Problems | [[11 - Subagents (Built-in)]] | ✅ |
+| 12 | Claude Custom Subagents | [[12 - Custom Subagents]] | ✅ |
+| 13 | Claude + MCP Explained | [[13 - MCP (Model Context Protocol)]] | ✅ |
+| 14 | Hooks — Full Theory + Practical | [[14 - Hooks in Claude Code]] | ✅ |
+| 15 | Plugins + Claude Code Notes | [[15 - Plugins & Extensions]] | ✅ |
 
 ---
 
@@ -98,11 +98,32 @@ It is a **system of best practices** for using Claude Code on *any* real project
 | `skill.md` — YAML front matter + body | [[10 - Claude Code Skills]] |
 | Personal vs project skills | [[10 - Claude Code Skills]] |
 | `disable_model_invocation: true` | [[10 - Claude Code Skills]] |
-| Parallel task execution | [[11 - Subagents (Built-in)]] |
-| Building AI workers | [[12 - Custom Subagents]] |
-| Connecting external tools | [[13 - MCP (Model Context Protocol)]] |
-| Pre/post action triggers | [[14 - Hooks in Claude Code]] |
-| Extending Claude Code | [[15 - Plugins & Extensions]] |
+| Context explosion + lost-in-the-middle | [[11 - Subagents (Built-in)]] |
+| Explore / Plan / General Purpose subagents | [[11 - Subagents (Built-in)]] |
+| Implicit vs explicit subagent triggering | [[11 - Subagents (Built-in)]] |
+| Parallel subagents — when and how | [[11 - Subagents (Built-in)]] |
+| Custom subagent file structure | [[12 - Custom Subagents]] |
+| Tool and model assignment per agent | [[12 - Custom Subagents]] |
+| Sequential multi-agent pipeline | [[12 - Custom Subagents]] |
+| Parallel code review (security + quality) | [[12 - Custom Subagents]] |
+| What MCP is and why it exists | [[13 - MCP (Model Context Protocol)]] |
+| Adding / removing MCP servers | [[13 - MCP (Model Context Protocol)]] |
+| Database MCP — natural language queries | [[13 - MCP (Model Context Protocol)]] |
+| Figma MCP — design to code | [[13 - MCP (Model Context Protocol)]] |
+| GitHub MCP — full PR workflow automation | [[13 - MCP (Model Context Protocol)]] |
+| Too many MCP servers degrades context | [[13 - MCP (Model Context Protocol)]] |
+| Coding harness concept | [[14 - Hooks in Claude Code]] |
+| Agent loop and session lifecycle | [[14 - Hooks in Claude Code]] |
+| Hook structure (event, matcher, action) | [[14 - Hooks in Claude Code]] |
+| Exit codes — 0 proceed, 2 block | [[14 - Hooks in Claude Code]] |
+| Auto-formatting hook (post_tool_use) | [[14 - Hooks in Claude Code]] |
+| File protection hook (pre_tool_use) | [[14 - Hooks in Claude Code]] |
+| Hooks vs CLAUDE.md instructions | [[14 - Hooks in Claude Code]] |
+| What a plugin is and why it exists | [[15 - Plugins & Extensions]] |
+| Plugin folder structure + plugin.json | [[15 - Plugins & Extensions]] |
+| Official vs third-party marketplaces | [[15 - Plugins & Extensions]] |
+| Installing plugins and marketplaces | [[15 - Plugins & Extensions]] |
+| Plugins include agents too | [[15 - Plugins & Extensions]] |
 
 ---
 
@@ -112,6 +133,8 @@ It is a **system of best practices** for using Claude Code on *any* real project
 - [ ] Multi-repo agentic workflows
 - [ ] Cost optimization at scale
 - [ ] Skill evaluation and benchmarking
+- [ ] Building custom MCP servers for internal tools
+- [ ] Private team marketplaces and plugin composition
 
 ---
 

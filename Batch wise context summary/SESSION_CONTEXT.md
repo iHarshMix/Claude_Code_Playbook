@@ -22,37 +22,55 @@
 | 2 | 3 + 4 + 5 | Core Interaction | ~89 min | ✅ |
 | 3 | 6 + 7 + 8 | Project Structure | ~111 min | ✅ |
 | 4 | 9 + 10 | Reusability | ~96 min | ✅ |
-| 5 | 11 + 12 | Agents | ~96 min | ⬜ |
-| 6 | 13 + 14 + 15 | Integrations & Automation | ~156 min | ⬜ |
+| 5 | 11 + 12 | Agents | ~96 min | ✅ |
+| 6 | 13 + 14 + 15 | Integrations & Automation | ~156 min | ✅ |
 
-### Why these batches?
-
-**Batch 1 — Foundations** `Videos 1 + 2`
-Mindset + Setup. Both needed before anything else works. Short videos, natural pair.
-
-**Batch 2 — Core Interaction** `Videos 3 + 4 + 5`
-Slash commands → making code changes → managing the context those changes consume.
-Tightly linked — each one feeds directly into the next.
-
-**Batch 3 — Project Structure** `Videos 6 + 7 + 8`
-The "before you write code" trio. CLAUDE.md instructs the agent, specs define the work,
-plan mode executes it with structure. Sequential dependency.
-
-**Batch 4 — Reusability** `Videos 9 + 10`
-Custom slash commands + Skills. Both about avoiding repetition and building reusable systems.
-Natural pair — same philosophy, different mechanism.
-
-**Batch 5 — Agents** `Videos 11 + 12`
-Built-in subagents → custom subagents. Direct continuation —
-understand what subagents are, then build your own.
-
-**Batch 6 — Integrations & Automation** `Videos 13 + 14 + 15`
-MCP + Hooks + Plugins. All about extending Claude Code beyond its defaults.
-Longest batch but one unified theme.
+**Playlist complete. All 15 notes written.**
 
 ---
 
 ## Session Log
+
+---
+
+### Session 6 — 2026-05-24
+**Batch covered:** Batch 5 + Batch 6 (combined session)
+**Videos covered:** Video 11 + Video 12 + Video 13 + Video 14 + Video 15
+**Notes written/updated:** 11 - Subagents (Built-in), 12 - Custom Subagents, 13 - MCP (Model Context Protocol), 14 - Hooks in Claude Code, 15 - Plugins & Extensions
+
+**What was done:**
+- Read transcripts for Videos 11, 12, 13, 14, and 15
+- Wrote note `11 - Subagents (Built-in)` — covers the context explosion problem (stateless LLMs + full history re-sent each turn), the "lost-in-the-middle" effect, how subagents solve it (isolated context, compact result returned), the three built-in types (Explore, Plan, General Purpose), implicit vs explicit triggering, parallel subagents pattern and the same-file conflict warning, and the function analogy as a `[!note]`
+- Wrote note `12 - Custom Subagents` — covers why built-ins are insufficient for specialized tasks, the Markdown + YAML file structure, two creation methods (UI via `/agents` and manual), tool and model assignment strategy, sequential pipeline (test-writer → test-runner) and parallel review (security + quality) as documented workflow patterns, the "don't trust generated files blindly" tip, and wiring subagents to slash commands
+- Wrote note `13 - MCP (Model Context Protocol)` — covers what MCP is and the pre-MCP integration problem, how it extends Claude Code's default toolset, add/remove/inspect workflow, a reference table of 9 key servers with their practical use cases, the GitHub token permissions gotcha, and the "too many servers degrades context" warning as the video's most counterintuitive lesson
+- Wrote note `14 - Hooks in Claude Code` — covers the coding harness concept (required foundation for hooks), agent loop and session lifecycle as compressed scaffolding, the probabilistic LLM + deterministic harness tension that hooks resolve, the three-field hook structure (event, matcher, action), exit code table (0 = proceed, 2 = block), stdin JSON payload pattern, auto-formatting and file-protection hook examples, and the CLAUDE.md vs hooks distinction
+- Wrote note `15 - Plugins & Extensions` — covers the sharing/distribution problem plugins solve, the plugin folder structure and mandatory `plugin.json` manifest, the app store analogy for marketplaces, official vs third-party marketplace distinction with marketplace.json format, install workflow, scope selection (user vs project), and the "plugins include agents too" correction from the video
+
+**Decisions made:**
+- Note 14 required the most structural work: the video's 20-minute conceptual setup (coding harness → agent loop → session lifecycle → hooks) was compressed into three short paragraphs as required scaffolding — without it, the hook definition and exit code system have no foundation
+- The session-start summary hook pattern (from the video's personal anecdote) became a `[!tip]` in Note 14 — the most generalizable creative use case mentioned
+- The "plugins include agents too" point was flagged as a correction the video itself made mid-stream; it's documented in Note 15's What It Is section rather than buried
+- All three meta files (PLAYBOOK_CONTEXT, MOC, SESSION_CONTEXT) updated to reflect 15/15 completion
+- MOC Key Concepts Quick Reference expanded significantly for Notes 11–15, going from 2 placeholder entries to 20+ specific concepts
+- PLAYBOOK_CONTEXT Structural Decisions updated with decisions from Sessions 5 and 6
+- To Explore Later in MOC updated with two new items from Notes 13 and 15
+
+**Style guide updated:** No
+
+**Open threads (carry to next session):**
+- Playlist is complete. No open threads.
+- Future work: assess whether any cross-cutting concepts warrant a `_concepts/` note (skill evaluation, harness engineering, MCP server building).
+
+**Next session:** Playlist complete. No scheduled next session.
+
+---
+
+### Session 5 — 2026-05-24
+**Batch covered:** Batch 5 — Agents
+**Videos covered:** Video 11 + Video 12
+**Notes written/updated:** 11 - Subagents (Built-in), 12 - Custom Subagents
+
+*(Absorbed into Session 6 above — both batches were completed in the same conversation.)*
 
 ---
 
@@ -67,16 +85,14 @@ Longest batch but one unified theme.
 - Wrote note `10 - Claude Code Skills` — covers the core problem (general LLMs vs specialized tasks), why prompts fail for repeated workflows (5 limitations as a table), skill folder structure with code block, `skill.md` anatomy (YAML front matter + Markdown body), Progressive Disclosure as the 3-level loading mechanism, personal vs project skills scope table, skill creation via Skill Creator (recommended path), skill composability, and `disable_model_invocation: true` for command-style skills
 
 **Decisions made:**
-- Commands → Skills merge documented in both notes. Note 09 carries the `[!note]` as the primary flag (since it directly affects the commands workflow); Note 10 documents the going-forward structure and the `disable_model_invocation` flag
-- Progressive Disclosure named and explained as the core loading mechanism — it's the key concept that distinguishes skills from system prompts
-- Personal vs project skills table mirrors the same pattern used in Note 06 for CLAUDE.md locations — consistent structure across notes
-- Skill evaluation and benchmarking parked in Note 10's To Explore Later and added to MOC's To Explore Later — mentioned in the video as a significant topic but not covered there
-- Key Concepts Quick Reference in MOC expanded with 5 entries for Note 09 and 5 for Note 10
+- Commands → Skills merge documented in both notes. Note 09 carries the `[!note]` as the primary flag; Note 10 documents the going-forward structure and the `disable_model_invocation` flag
+- Progressive Disclosure named and explained as the core loading mechanism
+- Personal vs project skills table mirrors the same pattern used in Note 06 for CLAUDE.md locations
+- Skill evaluation and benchmarking parked in Note 10's To Explore Later and added to MOC's To Explore Later
 
 **Style guide updated:** No
 
-**Open threads (carry to next session):**
-- None
+**Open threads:** None
 
 **Next session:** Batch 5 — Agents (Videos 11 + 12)
 
@@ -94,16 +110,13 @@ Longest batch but one unified theme.
 - Wrote note `08 - Plan Mode & Ultraplan` — covers Plan Mode activation, the planning prompt pattern, review/approve loop, Ultraplan as cloud-based escalation option, and three configuration levers (model selection, Extended Thinking, Effort Level) each as their own sub-section with a table for Effort Level
 
 **Decisions made:**
-- Auto Memory (`memory.md`) placed in Note 06's To Explore Later — it's closely related to CLAUDE.md (both are persistent memory) but distinct enough (written by Claude, not the developer) to not crowd the note
-- Spec and Technical Design Plan kept as clearly separate sub-sections in Note 07 — the rationale (tech-stack independence) is documented explicitly
-- Open thread from Session 2 resolved: the "do not touch X" constraint pattern is addressed in Note 07's Best Practices with a cross-link back to Note 06
-- Extended Thinking explanation in Note 08 uses the whiteboard/scratchpad analogy from the video — it was the clearest framing available
-- Key Concepts Quick Reference in MOC expanded significantly for Notes 06–08, going from 1–2 entries per note to 3–4, reflecting the higher concept density of this batch
+- Auto Memory (`memory.md`) placed in Note 06's To Explore Later
+- Spec and Technical Design Plan kept as clearly separate sub-sections in Note 07
+- Open thread from Session 2 resolved: the "do not touch X" constraint pattern is addressed in Note 07's Best Practices
 
 **Style guide updated:** No
 
-**Open threads (carry to next session):**
-- None — all Session 2 threads resolved
+**Open threads:** None
 
 **Next session:** Batch 4 — Reusability (Videos 9 + 10)
 
@@ -121,13 +134,12 @@ Longest batch but one unified theme.
 - Wrote note `05 - Context Window Management` — covers context window concept, ~150K usable token reality, pre-loaded components table, quadratic history growth, /context and /compact usage, auto-compaction vs manual compaction, /clear vs new session
 
 **Decisions made:**
-- Constraint pattern in prompts ("do not touch X") captured in Note 04 as [!tip] — worth revisiting in Note 07 (Spec-Driven Development)
-- Sub-agents forward-linked from Note 05 to Notes 11/12 — link will resolve when those notes are written
-- All content fully generalized — no project-specific references from the source videos
+- Constraint pattern in prompts ("do not touch X") captured in Note 04 as [!tip] — worth revisiting in Note 07
+- Sub-agents forward-linked from Note 05 to Notes 11/12
 
 **Style guide updated:** No
 
-**Open threads (carry to next session):**
+**Open threads:**
 - The "do not touch X" constraint pattern connects to spec writing — mention the link when writing Note 07
 
 **Next session:** Batch 3 — Project Structure (Videos 6 + 7 + 8)
@@ -148,18 +160,12 @@ Longest batch but one unified theme.
 - Notes generalize fully — no CampusX project references, no expense tracker mentions
 - The three orientation questions from Video 2 preserved verbatim as they are genuinely reusable for any project
 - `[!info]` callout used for analogies and added context (beyond video content), distinct from `[!tip]` which is for actionable best practices
-- Internal links added at bottom of each note to related notes (not back to MOC, per style guide)
 
 **Style guide updated:** No
 
-**Open threads (carry to next session):**
-- None
+**Open threads:** None
 
 **Next session:** Batch 2 — Core Interaction (Videos 3 + 4 + 5)
-
----
-
-<!-- Copy the block above for each new session. Most recent always at top. -->
 
 ---
 

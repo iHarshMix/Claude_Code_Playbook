@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MOC - Claude Code Playbook.md",
+                "file": "MOC_-_Claude_Code_Playbook.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MOC - Claude Code Playbook"
+              "title": "MOC_-_Claude_Code_Playbook"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "61bc6a1fea761ddd",
@@ -183,14 +184,19 @@
       "bases:Create new base": false
     }
   },
-  "active": "bbeb1ba782ba9b6d",
+  "active": "1c451f32d50bca92",
   "lastOpenFiles": [
     "_meta/PLAYBOOK_CONTEXT.md",
-    "_meta/NOTE_STYLE_GUIDE.md",
+    "15 - Plugins & Extensions.md",
+    "MOC_-_Claude_Code_Playbook.md",
     "MOC - Claude Code Playbook.md",
+    "14 - Hooks in Claude Code.md",
+    "13 - MCP (Model Context Protocol).md",
+    "12 - Custom Subagents.md",
     "11 - Subagents (Built-in).md",
-    "09 - Custom Slash Commands.md",
     "10 - Claude Code Skills.md",
+    "_meta/NOTE_STYLE_GUIDE.md",
+    "09 - Custom Slash Commands.md",
     "Notes Photos/10 Skill example.png",
     "Notes Photos/10 Asking Claude to make skills.png",
     "Notes Photos/10 How skills loads.png",
@@ -209,10 +215,6 @@
     "02 - Setup & Configuration.md",
     "01 - Agentic Coding Mindset.md",
     "Welcome.md",
-    "15 - Plugins & Extensions.md",
-    "14 - Hooks in Claude Code.md",
-    "13 - MCP (Model Context Protocol).md",
-    "12 - Custom Subagents.md",
     "_templates",
     "_meta"
   ]
